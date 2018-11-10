@@ -1,0 +1,23 @@
+Sending build context to Docker daemon   12.8kB
+Step 1/6 : FROM python:2.7
+ ---> 3c43a5d4034a
+Step 2/6 : COPY . /app
+ ---> Using cache
+ ---> 3d7fe6265737
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> b34fd1c4f306
+Step 4/6 : RUN pip install -r requirements.txt
+ ---> Using cache
+ ---> ee5164ec2e6e
+Step 5/6 : ENTRYPOINT ["python"]
+ ---> Using cache
+ ---> b476d4521cb2
+Step 6/6 : CMD ["app.py"]
+ ---> Using cache
+ ---> 78fd33b61592
+Successfully built 78fd33b61592
+Successfully tagged phase1_docker:latest
+c2991e70850ec2042e2a9173812ecfddc8b09faa7b5b993c7c9e28d05d41ef38
+CONTAINER ID        IMAGE                  COMMAND             CREATED             STATUS              PORTS                    NAMES
+f8bcaaec47fa        phase1_docker:latest   "python app.py"     3 minutes ago       Up 3 minutes        0.0.0.0:9001->5000/tcp   elated_babbage

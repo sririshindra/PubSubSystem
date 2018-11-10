@@ -1,0 +1,21 @@
+# Dockerfile - this is a comment. Delete me if you want.
+FROM python:2.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+#ENTRYPOINT ["python"]
+#CMD ["publisher.py 7001"]
+#CMD ["subscriber.py 6001"]
+#CMD ["broker.py 5000"]
+
+EXPOSE 5000
+EXPOSE 6005
+EXPOSE 7005
+
+#CMD echo Hello world
+ENTRYPOINT ["python"]
+CMD ["startup.py"]
+
+#ENTRYPOINT ["sh"]
+#CMD ["runfiles.sh"]
+#CMD echo Hello rishi
