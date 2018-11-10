@@ -98,7 +98,7 @@ if __name__ == "__main__":
     t1.start()
 
     print("thread finished...exiting")
-    app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
-    # app.run(debug=False)
+    # app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
+    app.run(debug=False)
     while True:
         pass

@@ -16,7 +16,7 @@ app.config.update(dict(
 ))
 
 
-messages = []
+messages = [2, 3, 4, 1,2,3,4,4,5,6,6,6]
 
 
 @app.route('/')
@@ -28,6 +28,7 @@ def my_form():
     """
 
     return render_template("subscribers.html")
+    # return render_template("subscribers_stream.html")
 
 
 @app.route('/', methods=['POST'])
@@ -39,6 +40,19 @@ def my_form_post():
     requests.post("http://localhost:5000/subscribe", data={'topic': source, 'url': "http://localhost:" + sys.argv[1] + "/receive"})
 
     return render_template("subscribers_stream.html")
+
+
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    print("subscriber called hope this works")
+
+    source = request.form['source']
+    # destination = request.form['destination']
+
+
+    requests.post("http://localhost:5000/subscribe", data={'topic': source, 'url': "http://localhost:" + sys.argv[1] + "/receive"})
+    # return render_template("subscribers_stream.html")
+    return "sucesss!"
 
 
 @app.route('/receive', methods=['POST'])
@@ -53,15 +67,39 @@ def receive():
     return "Received!"
 
 
-@app.route('/stream')
-def stream():
-    print("entered stream method")
+# @app.route('/stream')
+# def stream():
+#     print("entered stream method")
+#
+#     def generate():
+#         print("entered generate method")
+#
+#         while True:
+#             # print("entered line 60")
+#             if len(messages) != 0:
+#                 print("entered line 62")
+#                 print("popped messages ")
+#                 temp = messages.pop()
+#                 print(temp)
+#                 yield str(temp) + "\n"
+#             else:
+#                 yield ""
+#             # sleep(1)
+#         # while messages:
+#         #     x = messages.pop()
+#         #     yield str(x)
+#         #sleep(1)
+#
+#     return Response(stream_with_context(generate()))
 
-    def generate():
-        print("entered generate method")
+
+@app.route("/stream")
+def stream():
+    def eventStream():
 
         while True:
             # print("entered line 60")
+            print("enetred while loop")
             if len(messages) != 0:
                 print("entered line 62")
                 print("popped messages ")
@@ -70,15 +108,13 @@ def stream():
                 yield str(temp) + "\n"
             else:
                 yield ""
-            # sleep(1)
-        # while messages:
-        #     x = messages.pop()
-        #     yield str(x)
-        sleep(1)
+            sleep(2)
 
-    return Response(stream_with_context(generate()))
+    return Response(eventStream(), mimetype="text/event-stream")
+
 
 
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
-    # app.run(port=6001, debug=True, threaded=True)
+    # app.run(debug=True, host='0.0.0.0', port=int(sys.argv[1]), threaded=True)
+    app.run(port=6001, debug=True, threaded=True)
+
