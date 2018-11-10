@@ -73,7 +73,12 @@ def publish():
 def subscribe():
     topic = request.form["topic"]
     url = request.form["url"]
-    subscribe_dict[topic] = url
+    # subscribe_dict[topic] = url
+    if subscribe_dict.get(topic) is not None:
+        subscribe_dict[topic].append(url)
+    else:
+        subscribe_dict[topic] = [url]
+
     print(subscribe_dict)
 
     return 'Received !'
@@ -82,9 +87,10 @@ def subscribe():
 def notify():
     while True:
 
-        for topic, url in subscribe_dict.items():
+        for topic, urls in subscribe_dict.items():
             while messages.get(topic):
-                requests.post(url, data={'topic': topic, "message": messages[topic].pop()})
+                for url in urls:
+                    requests.post(url, data={'topic': topic, "message": messages[topic].pop()})
 
         # if global_list:
         #     print(global_list.pop())
@@ -98,7 +104,7 @@ if __name__ == "__main__":
     t1.start()
 
     print("thread finished...exiting")
-    # app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
-    app.run(debug=False)
+    app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
+    # app.run(debug=False)
     while True:
         pass

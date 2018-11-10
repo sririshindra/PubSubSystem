@@ -41,6 +41,6 @@ def my_form_post():
 
 if __name__ == "__main__":
     print(sys.argv[0])
-    # app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
-    app.run(debug=False, port=7001)
+    app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
+    # app.run(debug=False, port=7001)
 

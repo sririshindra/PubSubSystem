@@ -47,8 +47,8 @@ def subscribe():
     print("subscriber called hope this works")
 
     source = request.form['source']
+    print("source is ", source)
     # destination = request.form['destination']
-
 
     requests.post("http://localhost:5000/subscribe", data={'topic': source, 'url': "http://localhost:" + sys.argv[1] + "/receive"})
     # return render_template("subscribers_stream.html")
@@ -62,35 +62,9 @@ def receive():
     print(request.form["topic"])
     print(request.form["message"])
 
-    messages.append({request.form["message"] + "  " + request.form["topic"]})
+    messages.append(str(request.form["message"]) + "  " + str(request.form["topic"]))
 
     return "Received!"
-
-
-# @app.route('/stream')
-# def stream():
-#     print("entered stream method")
-#
-#     def generate():
-#         print("entered generate method")
-#
-#         while True:
-#             # print("entered line 60")
-#             if len(messages) != 0:
-#                 print("entered line 62")
-#                 print("popped messages ")
-#                 temp = messages.pop()
-#                 print(temp)
-#                 yield str(temp) + "\n"
-#             else:
-#                 yield ""
-#             # sleep(1)
-#         # while messages:
-#         #     x = messages.pop()
-#         #     yield str(x)
-#         #sleep(1)
-#
-#     return Response(stream_with_context(generate()))
 
 
 @app.route("/stream")
@@ -115,6 +89,6 @@ def stream():
 
 
 if __name__ == "__main__":
-    # app.run(debug=True, host='0.0.0.0', port=int(sys.argv[1]), threaded=True)
-    app.run(port=6001, debug=True, threaded=True)
+    app.run(debug=True, host='0.0.0.0', port=int(sys.argv[1]), threaded=True)
+    # app.run(port=6001, debug=True, threaded=True)
 

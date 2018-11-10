@@ -2,11 +2,26 @@
 <html>
 
 <body>
+
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<!--<script type=text/javascript>-->
+    <!--$(function() {-->
+        <!--$('a#test').bind('click', function() {-->
+            <!--$.getJSON('/background_process_test',-->
+                <!--function(data) {-->
+                    <!--//do nothing-->
+                <!--});-->
+            <!--return false;-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+
 <h1>Subscribe to the topic below </h1>
-<form method="POST">
+<form>
 
     <p1>Topic</p1>
-    <input name="source">
+    <input name="source" id="source">
     <br>
 
     <!--<input type="text"-->
@@ -21,29 +36,44 @@
     <!--<p1>Destination</p1>-->
     <!--<input name="destination">-->
     <p1></p1>
-    <input type="submit">
+    <input type="button" value="submit" onclick="dosome()">
 </form>
 
 
+<script>
+    function dosome()
+    {
+        //subscribe
+        var data=new FormData();
+        var v=document.getElementById('source').value;
+        data.append('source',v);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', "{{ url_for('subscribe') }}", true);
+        document.getElementById('source').value="";
+        xhr.send(data);
 
-<!--<br>-->
-<!--<br>-->
-<!--<br>-->
-<!--<pre id="output"></pre>-->
-<!--<script>-->
-    <!--var output = document.getElementById('output');-->
+    }
+</script>
 
-    <!--var xhr = new XMLHttpRequest();-->
-    <!--xhr.open('GET', "{{ url_for('stream') }}");-->
-    <!--xhr.send();-->
 
-    <!--setInterval(function() {-->
-        <!--output.textContent = xhr.responseText;-->
-    <!--}, 1000);-->
-<!--</script>-->
+<br>
+<br>
+<br>
+<pre id="output"></pre>
+<script>
+    var output = document.getElementById('output');
 
-<!--<br>-->
-<!--<br>-->
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "{{ url_for('stream') }}");
+    xhr.send();
+
+    setInterval(function() {
+        output.textContent = xhr.responseText;
+    }, 1000);
+</script>
+
+<br>
+<br>
 
 
 
