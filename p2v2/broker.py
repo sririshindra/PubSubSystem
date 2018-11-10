@@ -86,15 +86,22 @@ def subscribe():
 
 def notify():
     while True:
-
+        # print ("entered line 89")
         for topic, urls in subscribe_dict.items():
-            while messages.get(topic):
+            while messages.get(topic) is not None and len(messages.get(topic)) != 0:
+                message = messages[topic].pop()
                 for url in urls:
-                    requests.post(url, data={'topic': topic, "message": messages[topic].pop()})
+                    print("sending to  topic " + str(topic) + " with url " + url)
+
+                    try:
+                        requests.post(url, data={'topic': topic, "message": message})
+                    except Exception as e:
+                        print("an exception has been caught")
+                        print(e)
 
         # if global_list:
         #     print(global_list.pop())
-        sleep(1)
+        sleep(2)
 
 
 if __name__ == "__main__":
@@ -103,8 +110,17 @@ if __name__ == "__main__":
     t1.setDaemon(True)
     t1.start()
 
+    # notify()
+
     print("thread finished...exiting")
     app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
     # app.run(debug=False)
-    while True:
-        pass
+
+    # while True:
+    #     print("entered line 112")
+    #     for topic, urls in subscribe_dict.items():
+    #         while messages.get(topic) is not None:
+    #             for url in urls:
+    #                 print("sending to  topic " + str(topic) + " with url " + url)
+    #
+    #                 requests.post(url, data={'topic': topic, "message": messages[topic].pop()})
