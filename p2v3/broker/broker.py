@@ -80,15 +80,21 @@ def publish():
 def subscribe():
     topic = request.form["topic"]
     url = request.form["url"]
-    print("")
-    print("my remote address is as follows")
-    print(request.remote_addr)
-    print(request.endpoint)
-    print(request.url)
-    print(request.base_url)
-    print(request.access_route)
-    print(request.full_path)
-    print(request.url_root)
+    logging.error("")
+    logging.error("my remote address is as follows")
+    logging.error(request.remote_addr)
+    logging.error(url)
+
+    url = "http://" + str(request.remote_addr) + ":6001/receive"
+    logging.error(url)
+
+
+    # logging.error(request.endpoint)
+    # logging.error(request.url)
+    # logging.error(request.base_url)
+    # logging.error(request.access_route)
+    # logging.error(request.full_path)
+    # logging.error(request.url_root)
     # print(request)
     print("")
     # url = request.remote_addr
