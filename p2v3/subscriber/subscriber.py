@@ -58,7 +58,7 @@ def subscribe():
     print("source is ", source)
     # destination = request.form['destination']
 
-    logging.info("subscribe metthod is called!")
+    logging.info("subscribe method is called!")
 
     # requests.post("http://localhost:5000/subscribe", data={'topic': source, })
     r = requests.post("http://broker-service:5000/subscribe", data={'topic': source, 'url': "http://subscriber-service:6001" + "/receive"})

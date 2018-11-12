@@ -73,7 +73,7 @@ def stream():
 
         while True:
             # print("entered line 60")
-            print("enetred while loop")
+            print("entered while loop")
             if len(messages) != 0:
                 print("entered line 62")
                 print("popped messages ")

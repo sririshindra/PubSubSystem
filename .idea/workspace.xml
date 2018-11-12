@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcf24b69-8679-419c-9164-48a5916ce949" name="Default Changelist" comment="" />
+    <list default="true" id="bcf24b69-8679-419c-9164-48a5916ce949" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/p2v1/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/broker/templates/brokers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/broker/templates/directions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/broker/templates/directions_stream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/broker/templates/publishers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/broker/templates/subscribers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/broker/templates/subscribers_stream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/publisher/templates/brokers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/publisher/templates/directions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/publisher/templates/directions_stream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/publisher/templates/publishers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/publisher/templates/subscribers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p2v3/publisher/templates/subscribers_stream.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2v1/rundocker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/p2v1/rundocker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2v2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/p2v2/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2v2/subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/p2v2/subscriber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2v3/subscriber/subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/p2v3/subscriber/subscriber.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,61 +32,72 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DistributedProjectTwo$main.coverage" NAME="main Coverage Results" MODIFIED="1541810247367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v1" />
     <SUITE FILE_PATH="coverage/DistributedProjectTwo$test.coverage" NAME="test Coverage Results" MODIFIED="1541701640877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
-    <SUITE FILE_PATH="coverage/DistributedProjectTwo$subscriber.coverage" NAME="subscriber Coverage Results" MODIFIED="1541733308492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
-    <SUITE FILE_PATH="coverage/DistributedProjectTwo$publisher.coverage" NAME="publisher Coverage Results" MODIFIED="1541733256452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
-    <SUITE FILE_PATH="coverage/DistributedProjectTwo$startup.coverage" NAME="startup Coverage Results" MODIFIED="1541810603928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
-    <SUITE FILE_PATH="coverage/DistributedProjectTwo$broker.coverage" NAME="broker Coverage Results" MODIFIED="1541733254934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$subscriber.coverage" NAME="subscriber Coverage Results" MODIFIED="1541835672099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$publisher.coverage" NAME="publisher Coverage Results" MODIFIED="1541835593013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$startup.coverage" NAME="startup Coverage Results" MODIFIED="1541833105230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$broker.coverage" NAME="broker Coverage Results" MODIFIED="1541835587324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v2" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$broker__1_.coverage" NAME="broker (1) Coverage Results" MODIFIED="1541955041339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v3/broker" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$publisher__1_.coverage" NAME="publisher (1) Coverage Results" MODIFIED="1541957995025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v3/publisher" />
+    <SUITE FILE_PATH="coverage/DistributedProjectTwo$subscriber__1_.coverage" NAME="subscriber (1) Coverage Results" MODIFIED="1541959743374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p2v3/subscriber" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1803857301">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="3" />
-          <entry key="html" value="23" />
-          <entry key="py" value="13" />
-          <entry key="sh" value="5" />
-          <entry key="ts" value="1" />
-          <entry key="txt" value="4" />
+          <entry key="Dockerfile" value="12" />
+          <entry key="html" value="30" />
+          <entry key="py" value="28" />
+          <entry key="sh" value="8" />
+          <entry key="ts" value="2" />
+          <entry key="txt" value="7" />
+          <entry key="yaml" value="2" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="3" />
-          <entry key="Dockerfile" value="3" />
-          <entry key="HTML" value="23" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="13" />
-          <entry key="TypeScript" value="1" />
+          <entry key="Bash" value="6" />
+          <entry key="Dockerfile" value="12" />
+          <entry key="HTML" value="30" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="28" />
+          <entry key="TypeScript" value="2" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Dockerfile" value="307" />
+          <entry key="Dockerfile" value="379" />
           <entry key="dummy" value="6" />
-          <entry key="html" value="233" />
-          <entry key="py" value="1560" />
+          <entry key="html" value="793" />
+          <entry key="py" value="2634" />
           <entry key="sh" value="164" />
+          <entry key="txt" value="122" />
+          <entry key="yaml" value="46" />
+          <entry key="yml" value="117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="164" />
-          <entry key="Dockerfile" value="307" />
-          <entry key="HTML" value="233" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="1560" />
+          <entry key="Dockerfile" value="379" />
+          <entry key="HTML" value="793" />
+          <entry key="PLAIN_TEXT" value="128" />
+          <entry key="Python" value="2634" />
+          <entry key="YAML" value="163" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -78,42 +109,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v1/rundocker.sh">
+        <entry file="file://$PROJECT_DIR$/p2v2/publisher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v1/app.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v1/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v1/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/p2v2/subscriber.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="510">
+              <caret line="34" column="86" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="86" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -122,46 +121,91 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v2/startup.py">
+        <entry file="file://$PROJECT_DIR$/p2v3/subscriber/subscriber.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="637">
+              <caret line="107" column="14" selection-start-line="107" selection-end-line="108" />
               <folding>
-                <element signature="e#82#96#0" expanded="true" />
-                <marker date="1541752703806" expanded="true" signature="176:218" ph="..." />
+                <element signature="e#0#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v1/templates/directions.html">
+        <entry file="file://$PROJECT_DIR$/p2v3/broker/templates/subscribers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="780">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v1/templates/directions_stream.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/p2v2/subscriber.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v2/templates/subscribers.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/p2v2/startup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="107">
+              <caret line="79" column="41" lean-forward="true" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+              <folding>
+                <marker date="1541832447629" expanded="true" signature="175:968" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p2v2/templates/subscribers_stream.html">
+        <entry file="file://$PROJECT_DIR$/p2v2/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="39" />
+            <state relative-caret-position="495">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p2v3/broker/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p2v3/publisher/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p2v3/subscriber/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p2v3/docker-compose.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -180,7 +224,24 @@
       <find>stream1</find>
       <find>stream</find>
       <find>received messages</find>
+      <find>sleep</find>
+      <find>+</find>
+      <find>messa</find>
+      <find>url</find>
+      <find>subscribe</find>
+      <find>my remote address is as follows</find>
+      <find>subsc</find>
+      <find>sys.argv[0]</find>
+      <find>sys.argv[1]</find>
+      <find>entered subscriber</find>
+      <find>enetred while loop</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="48e19b96-b4a2-4c26-b8bc-e20275cd8bec" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -193,19 +254,28 @@
         <option value="$PROJECT_DIR$/p2v2/requirements.txt" />
         <option value="$PROJECT_DIR$/p2v2/run_files.sh" />
         <option value="$PROJECT_DIR$/p2v2/runfiles.sh" />
-        <option value="$PROJECT_DIR$/p2v2/startup.py" />
-        <option value="$PROJECT_DIR$/p2v2/broker.py" />
         <option value="$PROJECT_DIR$/p2v2/templates/publishers.html" />
-        <option value="$PROJECT_DIR$/p2v2/publisher.py" />
-        <option value="$PROJECT_DIR$/p2v2/Dockerfile" />
-        <option value="$PROJECT_DIR$/p2v2/templates/subscribers_stream.html" />
-        <option value="$PROJECT_DIR$/p2v2/templates/subscribers.html" />
-        <option value="$PROJECT_DIR$/p2v2/subscriber.py" />
         <option value="$PROJECT_DIR$/p2v1/templates/directions.html" />
         <option value="$PROJECT_DIR$/p2v1/requirements.txt" />
         <option value="$PROJECT_DIR$/p2v1/main.py" />
         <option value="$PROJECT_DIR$/p2v1/logfile.txt" />
+        <option value="$PROJECT_DIR$/p2v2/templates/subscribers_stream.html" />
+        <option value="$PROJECT_DIR$/p2v2/templates/subscribers.html" />
+        <option value="$PROJECT_DIR$/p2v2/publisher.py" />
+        <option value="$PROJECT_DIR$/p2v2/startup.py" />
+        <option value="$PROJECT_DIR$/p2v2/broker.py" />
         <option value="$PROJECT_DIR$/p2v1/rundocker.sh" />
+        <option value="$PROJECT_DIR$/p2v1/config.py" />
+        <option value="$PROJECT_DIR$/p2v3/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/p2v3/publisher/Dockerfile" />
+        <option value="$PROJECT_DIR$/p2v3/broker/Dockerfile" />
+        <option value="$PROJECT_DIR$/p2v3/publisher/publisher.py" />
+        <option value="$PROJECT_DIR$/p2v3/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/p2v3/subscriber/Dockerfile" />
+        <option value="$PROJECT_DIR$/p2v3/broker/broker.py" />
+        <option value="$PROJECT_DIR$/p2v2/subscriber.py" />
+        <option value="$PROJECT_DIR$/p2v3/subscriber/subscriber.py" />
+        <option value="$PROJECT_DIR$/p2v2/Dockerfile" />
       </list>
     </option>
   </component>
@@ -215,11 +285,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="965" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -241,41 +312,68 @@
             <path>
               <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
               <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
-              <item name="p2v1" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v3" type="462c0819:PsiDirectoryNode" />
+              <item name="broker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v3" type="462c0819:PsiDirectoryNode" />
+              <item name="broker" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
               <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
-              <item name="p2v2" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v3" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
               <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
-              <item name="p2v2" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v3" type="462c0819:PsiDirectoryNode" />
+              <item name="subscriber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DistributedProjectTwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DistributedProjectTwo" type="462c0819:PsiDirectoryNode" />
+              <item name="p2v3" type="462c0819:PsiDirectoryNode" />
+              <item name="subscriber" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541811592526" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542002333365" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/p2v3/subscriber" />
+      <recent name="$PROJECT_DIR$/p2v3/publisher" />
+      <recent name="$PROJECT_DIR$/p2v3/broker" />
       <recent name="$PROJECT_DIR$/p2v1" />
       <recent name="$PROJECT_DIR$/p2v2/templates" />
-      <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,8 +388,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.startup">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.publisher (1)">
+    <configuration name="broker (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DistributedProjectTwo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,12 +397,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v3/broker" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v1/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v3/broker/broker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="publisher (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DistributedProjectTwo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v3/publisher" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v3/publisher/publisher.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -320,14 +440,14 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/dsprojectone/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v2/publisher.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="7001" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -335,7 +455,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="startup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="subscriber (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DistributedProjectTwo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,12 +463,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v3/subscriber" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v2/startup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v3/subscriber/subscriber.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -364,14 +484,14 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/dsprojectone/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/p2v2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/p2v2/subscriber.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="6002" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -379,35 +499,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="p2v2/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="JSONFilePath" value="" />
-          <option name="command" value="" />
-          <option name="commandLineOptions" value="" />
-          <option name="containerName" value="" />
-          <option name="entrypoint" value="" />
-          <option name="imageTag" value="" />
-          <option name="sourceFilePath" value="$PROJECT_DIR$/p2v2/Dockerfile" />
-          <option name="startBrowserSettings">
-            <browser url="http://127.0.0.1" />
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.subscriber" />
       <item itemvalue="Python.publisher" />
-      <item itemvalue="Python.startup" />
-      <item itemvalue="Docker.p2v2/Dockerfile" />
-      <item itemvalue="Python.main" />
+      <item itemvalue="Python.broker (1)" />
+      <item itemvalue="Python.subscriber (1)" />
+      <item itemvalue="Python.publisher (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.startup" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Docker.p2v2/Dockerfile" />
+        <item itemvalue="Python.subscriber (1)" />
+        <item itemvalue="Python.publisher (1)" />
+        <item itemvalue="Python.broker (1)" />
         <item itemvalue="Python.subscriber" />
         <item itemvalue="Python.publisher" />
       </list>
@@ -430,17 +533,94 @@
       <workItem from="1541729748360" duration="20017000" />
       <workItem from="1541753426315" duration="599000" />
       <workItem from="1541804848681" duration="3922000" />
-      <workItem from="1541810227000" duration="1118000" />
+      <workItem from="1541810227000" duration="20771000" />
+      <workItem from="1541833740414" duration="3033000" />
+      <workItem from="1541838925819" duration="296000" />
+      <workItem from="1541862204736" duration="26473000" />
     </task>
+    <task id="LOCAL-00001" summary="working version 1">
+      <created>1541823306501</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541823306501</updated>
+    </task>
+    <task id="LOCAL-00002" summary="working version 1">
+      <created>1541823362742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541823362742</updated>
+    </task>
+    <task id="LOCAL-00003" summary="working version 1">
+      <created>1541833023281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541833023281</updated>
+    </task>
+    <task id="LOCAL-00004" summary="working version 1">
+      <created>1541838970551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541838970552</updated>
+    </task>
+    <task id="LOCAL-00005" summary="working version 2 with phase 3 included">
+      <created>1541968488374</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541968488374</updated>
+    </task>
+    <task id="LOCAL-00006" summary="working version 2 with phase 3 included and multiple publisher and subscribers included redirection included">
+      <created>1541972740281</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541972740281</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49152000" />
+    <option name="totallyTimeSpent" value="98607000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="965" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27106228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16849817" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.3298969" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3298969" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35816327" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2802198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -455,40 +635,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.3298969" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3298969" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3298969" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -508,6 +657,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working version 1" />
+    <MESSAGE value="working version 2 with phase 3 included" />
+    <MESSAGE value="working version 2 with phase 3 included and multiple publisher and subscribers included redirection included" />
+    <option name="LAST_COMMIT_MESSAGE" value="working version 2 with phase 3 included and multiple publisher and subscribers included redirection included" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/p2v2/templates/directions_stream.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -520,20 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
           <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256620">
-          <caret line="17121" column="27" selection-start-line="17121" selection-start-column="27" selection-end-line="17121" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p2v2/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -558,21 +699,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/p2v2/runfiles.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rundocker.sh" />
-    <entry file="file://$PROJECT_DIR$/p2v2/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logfile.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -580,13 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p2v2/broker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -599,20 +719,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v2/publisher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/p2v1/logfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v1/templates/directions_stream.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v1/app.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/dsprojectone/lib/python3.6/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="1220" selection-start-line="1220" selection-end-line="1220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="16458" column="4" selection-start-line="16458" selection-start-column="4" selection-end-line="16458" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/templates/subscribers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/templates/subscribers_stream.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="13" selection-start-line="51" selection-start-column="4" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v1/templates/directions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -623,64 +781,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v1/templates/directions_stream.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/p2v1/rundocker.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v1/app.py">
+    <entry file="file://$PROJECT_DIR$/p2v3/broker/templates/brokers.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v1/templates/directions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/p2v3/publisher/templates/brokers.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/subscriber/templates/brokers.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/p2v1/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        <state relative-caret-position="523">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v2/startup.py">
+    <entry file="file://$PROJECT_DIR$/p2v1/config.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/dsprojectone/lib/python3.6/site-packages/werkzeug/wrappers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="185">
+          <caret line="599" column="8" selection-start-line="599" selection-start-column="8" selection-end-line="599" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/broker/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/subscriber/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/publisher/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/publisher/publisher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/subscriber/templates/subscribers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="72" selection-start-line="62" selection-start-column="8" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/broker/broker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="88" column="22" lean-forward="true" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
           <folding>
-            <element signature="e#82#96#0" expanded="true" />
-            <marker date="1541752703806" expanded="true" signature="176:218" ph="..." />
+            <element signature="e#0#80#0" expanded="true" />
+            <element signature="e#858#1423#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v2/templates/subscribers.html">
+    <entry file="file://$PROJECT_DIR$/p2v2/broker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+            <element signature="e#478#796#0" />
+            <element signature="e#858#1423#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p2v2/templates/subscribers_stream.html">
+    <entry file="file://$PROJECT_DIR$/p2v3/broker/templates/subscribers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="39" />
+        <state relative-caret-position="780">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/subscriber/subscriber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="107" column="14" selection-start-line="107" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/runfiles.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/publisher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="86" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/broker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/publisher/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/broker/templates/directions.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/p2v2/subscriber.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="265">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
           <folding>
             <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v3/subscriber/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p2v2/startup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="79" column="41" lean-forward="true" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+          <folding>
+            <marker date="1541832447629" expanded="true" signature="175:968" ph="..." />
           </folding>
         </state>
       </provider>
