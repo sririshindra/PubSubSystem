@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, stream_with_context, Response
 from time import sleep
 import requests
-# from pprint import pprint
-
 import os
 import sys
 
@@ -17,10 +15,9 @@ app.config.update(dict(
 
 @app.route('/')
 def my_form():
-    """
-    :returns: the html containing input boxes for topic and message
-    """
+
     return render_template("publishers.html")
+
 
 @app.route('/', methods=['POST'])
 def my_form_post():

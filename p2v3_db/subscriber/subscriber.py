@@ -10,7 +10,6 @@ logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(level
 print("entered subscriber")
 logging.error("entered subscriber")
 
-
 """
 Initializes the flask app
 """
@@ -22,6 +21,7 @@ app.config.update(dict(
 
 
 messages = ["Subscriber Started"]
+# messages = [2, 3, 4, 1,2,3,4,4,5,6,6,6]
 
 
 @app.route('/')
@@ -30,6 +30,7 @@ def my_form():
     :return: html file that provides the input box where the user can enter the topic that a particular
     subscriber has to subscribe to. Also the html includes an ajax call to get the messages a particular topic has.
     """
+
     print("entered line 29")
     logging.error("entered line 29")
 
@@ -57,7 +58,6 @@ def subscribe():
     r = requests.post("http://broker-service:5000/subscribe", data={'topic': source, 'url': "http://subscriber-service:6001" + "/receive"})
 
     logging.error(r)
-
     return "sucesss!"
 
 
@@ -112,6 +112,3 @@ if __name__ == "__main__":
     Starts the flask app
     """
     app.run(debug=False, host='0.0.0.0', port=6001, threaded=True)
-
-
-

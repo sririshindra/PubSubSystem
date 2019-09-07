@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, stream_with_context, Response
 from time import sleep
-# from pprint import pprint
-
 import os
 import sys
 
 
+"""
+Initializes Flask
+"""
 app = Flask(__name__)
 app.config.update(dict(
     SECRET_KEY="powerful secretkey",
@@ -16,9 +17,7 @@ app.config.update(dict(
 @app.route('/')
 def my_form():
     """
-    When the user loads the website the default page that will be loaded using this method.
-    Gets the default directions and weather form buffalo to nyc.
-    :return: html file that returns the default directions and weather information from Buffalo to nyc
+    :return: html for entering the source code.
     """
 
     return render_template("directions.html")
@@ -26,6 +25,10 @@ def my_form():
 
 @app.route('/', methods=['POST'])
 def my_form_post():
+    """
+    write the code to a file and build a docker image to run the code in that file.
+    :return: output of docker build and docker running html for entering the source code.
+    """
 
     source = request.form['source']
     destination = request.form['destination']
@@ -34,9 +37,8 @@ def my_form_post():
     print("Source is ", source)
     print("destination is ", destination)
 
-    #os.system(source + " > " + path + "/" + destination)
-
-    text_file = open(path + destination, "w")
+    text_file = open(path + "app.py", "w")
+    # text_file = open(path + destination, "w")
 
     text_file.write(source)
 
@@ -49,6 +51,10 @@ def my_form_post():
 
 @app.route('/stream')
 def stream():
+    """
+    code to stream the output of the docker log file to browser
+    :return: stream the logs to the browser
+    """
     def generate():
         # with open('job.log') as f:
         with open('/Users/srinivasrishindra/IdeaProjects/DistributedProjectTwo/p2v1/logfile.txt') as f:
@@ -60,4 +66,7 @@ def stream():
 
 
 if __name__ == "__main__":
+    """
+    code to run the flask app 
+    """
     app.run(debug=False, port=9000)

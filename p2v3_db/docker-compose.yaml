@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  subscriber-service:
+    build: ./subscriber
+    ports:
+    - 6001:6001
+
+  broker-service:
+    build: ./broker
+    ports:
+      - 5000:5000
+
+  publisher-service:
+    build: ./publisher
+    ports:
+      - 7000:7000
+#      - "127.0.0.1:7000:7000"
+#    depends_on:
+#      - broker-service
+
+
+
+

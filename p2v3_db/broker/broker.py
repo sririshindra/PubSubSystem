@@ -2,7 +2,11 @@ from flask import Flask, render_template, request, stream_with_context, Response
 from time import sleep
 from threading import Thread
 import requests
+
+# from pprint import pprint
+
 import os
+import sys
 import logging
 logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
@@ -15,7 +19,7 @@ app.config.update(dict(
     WTF_CSRF_SECRET_KEY="a csrf secret key"
 ))
 
-messages = {}
+messages = {}   #{"dummy_topic": [1, 2, 3, 4, 5, 6, 7]}
 subscribe_dict = {}
 
 
@@ -28,28 +32,6 @@ def my_form():
 
     return render_template("directions.html")
 
-
-@app.route('/', methods=['POST'])
-def my_form_post():
-
-    source = request.form['source']
-    destination = request.form['destination']
-
-    path = "/Users/srinivasrishindra/Desktop/Fall_2018/Distributed_Systems/project2/phase1/phase1_docker/"
-    print("Source is ", source)
-    print("destination is ", destination)
-
-    #os.system(source + " > " + path + "/" + destination)
-
-    text_file = open(path + destination, "w")
-
-    text_file.write(source)
-
-    text_file.close()
-
-    os.system("sh /Users/srinivasrishindra/IdeaProjects/DistributedProjectTwo/rundocker.sh")
-
-    return render_template("directions_stream.html")
 
 
 @app.route('/publish', methods=['POST'])
@@ -137,4 +119,7 @@ if __name__ == "__main__":
     t1.start()
 
     print("thread finished...exiting")
+    # app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
     app.run(debug=False, host='0.0.0.0')
+    # app.run(debug=False, host='0.0.0.0', port=int(sys.argv[1]))
+    # app.run(debug=False)
